@@ -77,7 +77,7 @@ fn cyl_vol(){
 }
 
 fn main() {
-   println!("Welcome Dear Mathematician");
+   println!("\nWelcome Dear Mathematician");
    println!("\nThe Shape Calculator");
    println!("1. Tapezium (Area)");
    println!("2. Rhombu (Area)");
@@ -101,7 +101,7 @@ fn main() {
    } else if shape_choice == 5 {
     cyl_vol();
    } else if shape_choice == 0 {
-   println!("Thankyou for using The Shape Calculator");
+   println!("\nThankyou for using The Shape Calculator");
    break;
    } else {
     println!("Enter a valid shape choice.");
