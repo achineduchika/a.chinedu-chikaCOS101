@@ -21,6 +21,12 @@ fn main() {
    file.write_all(student3.as_bytes()).expect("Failed to write");
    file.write_all(student4.as_bytes()).expect("Failed to write");
    file.write_all(student5.as_bytes()).expect("Failed to write");
-
+   use std::io::Read;
+   let mut file = std::fs::File::open("PAU_SMIS.csv").unwrap();
+   let mut contents = String::new();
+   file.read_to_string(&mut contents).unwrap();
+   println!("{}", contents);
+   
+   println!("Data has been displayed");
    println!("File has been created and data has been written to it");
 }
