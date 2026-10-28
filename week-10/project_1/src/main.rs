@@ -35,6 +35,14 @@ fn main() {
     let total_l4 = l4.total_cost();
 
     let bill = total_l1 + total_l2 + total_l3 + total_l4;
-
-    println!("Dear customer, after choosing to purchase three laptops each your total cost is\n₦{}", bill);
+    println!("\n        Alaba Electronics");
+    println!("\n             -Receipt-");
+    println!("\nItem          Quantity     Price");
+    println!("HP Laptop        3         ₦650000");
+    println!("IBM Laptop       3         ₦755000");
+    println!("nToshiba Laptop  3         ₦550000");
+    println!("Dell Laptop      3         ₦850000");
+    println!("-----------------------------------");
+    println!("             -Total Cost   ₦{}", bill);
+    println!("-----------------------------------");
 }
